@@ -1,0 +1,17 @@
+
+let reverse = (int) => {
+    let toStr = int.toString();
+    let toArr = toStr.split('');
+    let rev = toArr.reverse();
+    return rev.join('');
+}
+
+
+let isPalindrome = (x) => {
+    return x === reverse(x);
+}
+
+
+console.log(isPalindrome(121));
+console.log(isPalindrome(-121));
+console.log(isPalindrome(10));

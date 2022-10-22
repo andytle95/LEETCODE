@@ -1,0 +1,20 @@
+
+
+
+let isPalindrome = (x) => {
+    let string = x.toString();
+    let array = string.split('');
+    let reverse = array.reverse();
+    let joined = reverse.join('')
+
+    if (string === joined) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+console.log(isPalindrome(121));
+console.log(isPalindrome(-121));
+console.log(isPalindrome(10));

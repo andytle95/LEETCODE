@@ -5,6 +5,7 @@ let mergeTwoLists = (list1, list2) => {
     list1.concat(list2)
     list1.sort()
     return mergeTwoLists(list1, list2);
+    //ok
 }
 
 console.log(mergeTwoLists([1,2,4], [1,3,4]));

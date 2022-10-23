@@ -10,8 +10,10 @@ let lengthOfLastWord = (s) => {
 
     for (let i = array.length - 1; i > 0; i --) {
         let answer = array[i];
+        // console.log(answer)
         if (answer.length === 0) {
-            i -= 1
+            i --;
+            return array[i - 1].length
         } else {
             return answer.length;
         }

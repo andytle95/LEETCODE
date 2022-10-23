@@ -1,11 +1,9 @@
 let isValid = (s) => {
 
-    let array = s.split('')
-    console.log(array)
 
     let legend = ['()', '[]', '{}'];
 
-    if (legend.includes(array)) {
+    if (legend.includes(s)) {
         return true;
     } else {
         return false;

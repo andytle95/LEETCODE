@@ -1,0 +1,17 @@
+let isValid = (s) => {
+
+    let array = s.split('')
+    console.log(array)
+
+    let legend = ['()', '[]', '{}'];
+
+    if (legend.includes(array)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(isValid('()'))
+console.log(isValid("()[]{}"))
+console.log(isValid("(]"))

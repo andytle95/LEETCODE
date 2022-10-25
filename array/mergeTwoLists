@@ -1,0 +1,12 @@
+let mergeTwoLists = (list1, list2) => {
+    let answer = [];
+    let l1 = Object.values(list1);
+    let l2 = Object.values(list2);
+    for (let i = 0; i < l2.length; i ++ {
+        console.log(l2[i])
+    }
+}
+
+console.log(mergeTwoLists([1, 2, 4], [1, 3, 4]));
+console.log(mergeTwoLists([], []));
+console.log(mergeTwoLists([], [0]))

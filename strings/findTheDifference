@@ -1,7 +1,6 @@
 let findTheDifference = (s, t) => {
     let arr1 = s.split('');
-    let arr2 = t.split('')
-    // for (let i = )
+    let arr2 = t.split('');
 }
 
 console.log(findTheDifference('abcd', 'abcde'));

@@ -3,7 +3,7 @@ let findTheDifference = (s, t) => {
     let arr2 = t.split('');
     if (arr2.length === arr1.length + 1) {
         for (let i = arr2.length - 1; i > 0; i --) {
-            return arr2[i]
+
         }
     }
 }

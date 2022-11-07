@@ -11,9 +11,17 @@ let containsDuplicate = (nums) => {
             obj[keys] += 1;
         }
     }
-    return obj;
-}
+    let vals = Object.values(obj);
+    for (let i = 0; i < vals.length; i ++) {
+        let value = vals[i];
+        if (value >= 2) {
+            return true;
+        }
+    }
+    return false;
+    }
 
-console.log(containsDuplicate([1, 2, 3, 1]));
+
+console.log(containsDuplicate([2, 14, 18, 22, 22]));
 console.log(containsDuplicate([1, 2, 3, 4]));
 console.log(containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]));

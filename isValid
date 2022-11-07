@@ -1,0 +1,15 @@
+let isValid = (s) => {
+
+
+    let legend = ['()', '[]', '{}'];
+
+    if (legend.includes(s)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(isValid('()'))
+console.log(isValid("()[]{}"))
+console.log(isValid("(]"))

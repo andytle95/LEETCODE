@@ -1,0 +1,19 @@
+
+//leetcode only uses arrays
+
+let containsDuplicate = (nums) => {
+    let obj = {};
+    for (let key in nums) {
+        let keys = nums[key]
+        if (obj[keys] === undefined) {
+            obj[keys] = 1;
+        } else {
+            obj[keys] += 1;
+        }
+    }
+    return obj;
+}
+
+console.log(containsDuplicate([1, 2, 3, 1]));
+console.log(containsDuplicate([1, 2, 3, 4]));
+console.log(containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]));

@@ -1,5 +1,6 @@
 
 //leetcode only uses arrays
+//
 
 let containsDuplicate = (nums) => {
     let obj = {};

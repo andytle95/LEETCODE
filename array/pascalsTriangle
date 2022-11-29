@@ -1,3 +1,7 @@
 let generate = (numRows) => {
-
+    let arr = [];
+    // i don't understand pascal's triangle irl
 }
+
+console.log(generate(5));
+console.log(generate(1));

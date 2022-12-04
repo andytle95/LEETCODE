@@ -2,6 +2,7 @@
 //leetcode only uses arrays
 //
 //solved
+// comment 1
 let containsDuplicate = (nums) => {
     let obj = {};
     for (let key in nums) {

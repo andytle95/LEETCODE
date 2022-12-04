@@ -1,7 +1,12 @@
 
 //leetcode only uses arrays
 //
+<<<<<<< HEAD
 //solved, yup
+=======
+//solved
+// comment 1
+>>>>>>> 3c7de2c (okay comment)
 let containsDuplicate = (nums) => {
     let obj = {};
     for (let key in nums) {

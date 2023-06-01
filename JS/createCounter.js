@@ -6,23 +6,20 @@
 // increment() increases the current value by 1 and then returns it.
 // decrement() reduces the current value by 1 and then returns it.
 // reset() sets the current value to init and then returns it.
-
-let increment = (up) => {
-    return up + 1;
-}
-
-let reset = (zero) => {
-    return zero;
-}
-
-let decrement = (decrease) => {
-    return decrease - 1;
-}
-
-
-
 let createCounter = (init) => {
-    increment(init);
-    reset(init);
-    decrement(init);
+    let num = init;
+    return {
+        increment:function() {
+            num++;
+            return num;
+        },
+        decrement:function() {
+            num--;
+            return num;
+        },
+        reset:function() {
+            num = init;
+            return num;
+        }
+    }
 }

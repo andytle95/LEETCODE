@@ -1,10 +1,8 @@
 let map = (arr, fn) => {
-    let array = [];
+    // let array = [];
 
     for (let i = 0; i < arr.length; i ++) {
-        if (fn(arr[i], i)) {
-            array.push(arr[i]);
-        }
+        arr[i] = fn(arr[i], i);
     }
-    return array;
+    return arr;
 }

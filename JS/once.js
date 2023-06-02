@@ -7,6 +7,10 @@
 
 let once = function(fn) {
     return function(...args) {
-
+        let called = false;
+        if (!called) {
+            called = true;
+            return fn(...args);
+        }
     }
 }

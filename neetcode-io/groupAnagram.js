@@ -7,13 +7,9 @@ var groupAnagrams = function(strs) {
         // the actual letters
         let letters = strs[i];
         // define sorted letters
-        let anagram = letters.split('').sort().join('')
-        if (anagram === anagram) {
-            true;
-        }
-        if (true) {
-            arr.push(letters);
-        }
+        let anagram = letters.split('').sort().join('');
     }
     return arr;
 };
+
+console.log(groupAnagrams(["eat","tea","tan","ate","nat","bat"]));

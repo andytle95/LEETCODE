@@ -8,6 +8,7 @@ var groupAnagrams = function(strs) {
         let letters = strs[i];
         // define sorted letters
         let anagram = letters.split('').sort().join('');
+        // ok
     }
     return arr;
 };
